@@ -13,17 +13,17 @@ public class AdvancedRobotRace {
 	static Random rand = new Random();
 	static int randNum = rand.nextInt(300);
 	public static void main(String[] args) {
-		Thread r1 = new Thread(() -> {
-			while (raceWon == false) {
-				randNum = rand.nextInt(300);
-				rob.move(randNum);
-				if(rob.getY() <= 100) {
-					raceWon = true;
-					winner = "rob";
-				}
-			}
-		});
-		r1.start();
+//		Thread r1 = new Thread(() -> {
+//			while (raceWon == false) {
+//				randNum = rand.nextInt(300);
+//				rob.move(randNum);
+//				if(rob.getY() <= 100) {
+//					raceWon = true;
+//					winner = "rob";
+//				}
+//			}
+//		});
+//		r1.start();
 	}
 void setUpRace() {
 	threads = new Thread[5];
